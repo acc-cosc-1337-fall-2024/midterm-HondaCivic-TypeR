@@ -10,3 +10,17 @@ TEST_CASE("test")
 {
 	REQUIRE(test_config() == true);
 }
+
+TEST_CASE("Verify show_reference_param function")
+{
+	int num = 2;
+	show_reference_parameter(num);
+	REQUIRE(num == 5);
+}
+
+TEST_CASE("Verify show_reference_param function again")
+{
+	int num = 100;
+	show_reference_parameter(num);
+	REQUIRE(num == 5);
+}
